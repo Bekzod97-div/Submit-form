@@ -48,10 +48,10 @@ img {
 
 /* Section hero styles */
 .hero {
+    display: block;
     width: 100%;
     max-width: 570px;
     flex-grow: 1;
-    border-radius: 20px;
     margin-right: 12px;
 }
 .hero-content {
@@ -60,8 +60,10 @@ img {
     background-position: center center;
     background-size: cover;
     padding-left: 60px;
-    padding-top: 60px;
+    padding-right: 121px;
+    padding-top: 55px;
     padding-bottom: 232px;
+    border-radius: 20px 20px 0 0;
 }
 .hero-content-link {
     font-weight: 500;
@@ -69,6 +71,8 @@ img {
     line-height: 17px;
     color: #fff;
     padding: 5px 15px;
+    border: 2px solid #fff;
+    border-radius: 10px;
     background-color: inherit;
     text-decoration: none;
     margin-bottom: 40px;
@@ -99,6 +103,12 @@ img {
     border-radius: 0 0 20px 20px;
     border: 0;
 }
+.hero-btn:hover {
+    opacity: 0.8;
+}
+.hero-btn:active {
+    opacity: 0.6;
+}
 
 
 .sign-up {
@@ -109,7 +119,7 @@ img {
     border-radius: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-top: 55px;
+    padding-top: 58px;
     padding-bottom: 40px;
 }
 .sign-up-heading {
@@ -117,22 +127,37 @@ img {
     font-size: 32px;
     line-height: 42px;
     color: #000;
+    margin-top: 0;
     margin-bottom: 16px;
 }
 
 /* Form styles */
 form {
     margin-top: 63px;
-    margin-bottom: 63px;
+    margin-bottom: 8px;
 }
 
 input {
+    display: block;
     border: 0;
     width: 100%;
     border-bottom: 1px solid #555;
     padding-bottom: 14px;
 }
+
+input:not(:first-child) {
+    padding-top: 35px;
+}
+input::placeholder {
+    color: #555;
+}
+
+.password-input {
+    margin-bottom: 63px;
+}
+
 .name-input {
+    display: block;
     border-bottom: 1px solid #000;
 }
 .name-input::placeholder {
@@ -140,9 +165,32 @@ input {
     font-size: 18px;
     line-height: 22px;
 }
+
+/* Submit styles */
 .submit-form-btn {
+    border: 0;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    width: 100%;
+    color: #fff;
+    font-weight: 600;
+    background-color: #655af2;
+    border-radius: 10px;
 }
+.submit-form-btn:hover {
+    opacity: 0.8;
+}
+.submit-form-btn:active {
+    opacity: 0.6;
+}
+
+/* Terms and conditions styles */
 .terms-conditions {
+    font-size: 11px;
+    line-height: 15px;
+    color: #555;
 }
 .signup-term-link {
+    text-decoration: none;
+    color: #f03535;
 }
