@@ -29,6 +29,8 @@ img {
 }
 
 .container {
+    display: flex;
+    align-items: center;
     width: 100%;
     max-width: 1200px;
     padding-left: 50px;
@@ -39,5 +41,45 @@ img {
 
 /* Main content */
 .main-content {
+    padding: 80px 144px;
+    background-color: #e7e7e7;
     flex-grow: 1;
+}
+
+/* Section hero styles */
+.hero {
+    width: 100%;
+    max-width: 570px;
+    flex-grow: 1;
+    border-radius: 20px;
+}
+.hero-content {
+    background-image: url(../img/Rectangle\ 6.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-left: 60px;
+    padding-top: 60px;
+}
+.hero-content-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: inherit;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+.hero-content-heading {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.hero-content-text {
+}
+.hero-btn {
 }
